@@ -34,12 +34,14 @@ client.on('message', message => {
 
 if (command == "say") {
 
+let rank = message.guild.member(message.author).roles.find('name', 'say -_+');
+if (!rank) return message.reply('-_- go out ')
   message.channel.send(args.join("  "))
+    message.delete();
   }
 
 
 });
-  
   
 
 client.login(process.env.BOT_TOKEN);
