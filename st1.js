@@ -5,8 +5,7 @@ const request = require('request');
 const fs = require('fs');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
-const prefix = "!"
-const function  = new Discord.function();
+const prefix = ">"
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
